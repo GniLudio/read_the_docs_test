@@ -1,0 +1,7 @@
+[project]
+name = "read-the-docs-test"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "sphinx>=9.2.0",
+]
