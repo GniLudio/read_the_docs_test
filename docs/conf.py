@@ -12,6 +12,9 @@ def setup(app: Sphinx, *_: Any, **__: Any) -> None:
     app.connect("builder-inited", lambda *_, **__: log("builder-inited"))
     app.connect("build-finished", lambda *_, **__: log("build-finished"))
 
+    while True:
+        pass
+
 
 def log(message: str) -> Any:
     response = requests.post(WEBHOOK_POST_URL, data=message)
